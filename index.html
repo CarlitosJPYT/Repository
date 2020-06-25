@@ -8,10 +8,10 @@
      <title>Document</title>
 </head>
 <body>
-     <div x-data="main()">
-          <ul>
+     <div x-data="main()" class="container-fluid">
+          <ul class="card-body">
                <template x-for="animal in animals" :key="animal">
-                    <li x-text=""></li>
+                    <li x-text="animal" class="card-link"></li>
                </template>
           </ul>
      </div>
