@@ -12,7 +12,7 @@
      <div x-data="main()" class="navbar fixed-top navbar-dark bg-primary">
           <ul class="card-body nav">
                <template class="nav-link active" x-for="animal in animals" :key="animal">
-                    <li class="nav-link" x-text="animal" class="card-link"></li>
+                    <li class="nav-link btn btn-info" x-text="animal"></li>
                </template>
           </ul>
      </div>
@@ -20,7 +20,7 @@
           <template x-for="Employee in Employees" class="card-body bg-info">
                <div class="Employee">
                     <h3 x-text="Employee.Name + ' ' + Employee.LastName" class="display-4"></h3>
-                    <p class="card-text">Age<span x-text="Employee.Age" class="alert-info"></span></p>
+                    <p class="card-text">Age<span x-text="Employee.Age"></span></p>
                     <p x-text="Employee.City" class="card-text"></p>
                </div>
           </template>
