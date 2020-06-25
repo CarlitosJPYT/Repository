@@ -8,12 +8,19 @@
      <title>Document</title>
 </head>
 <body>
-     <div x-data="main()" class="container-fluid">
-          <ul class="card-body">
+     <div x-data="main()" class="container-fluid bg-primary">
+          <ul class="card-body bg-light">
                <template x-for="animal in animals" :key="animal">
                     <li x-text="animal" class="card-link"></li>
                </template>
           </ul>
+     </div>
+     <div x-data="list()" class="container bg-secondary">
+          <template x-for="Employee in Employees" class="card-body bg-info">
+               <div class="Employee">
+                    <h3 x-text="Employee.Name, + ' ' + Employee.LastName" class="display-4"></h3>
+               </div>
+          </template>
      </div>
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
