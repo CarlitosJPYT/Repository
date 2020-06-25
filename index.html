@@ -9,7 +9,7 @@
 </head>
 <body>
      <div x-data="main()" class="container-fluid bg-primary">
-          <ul class="card-body bg-light">
+          <ul class="card-body">
                <template x-for="animal in animals" :key="animal">
                     <li x-text="animal" class="card-link"></li>
                </template>
@@ -18,7 +18,8 @@
      <div x-data="list()" class="container bg-secondary">
           <template x-for="Employee in Employees" class="card-body bg-info">
                <div class="Employee">
-                    <h3 x-text="Employee.Name, + ' ' + Employee.LastName" class="display-4"></h3>
+                    <h3 x-text="Employee.Name + ' ' + Employee.LastName" class="display-4"></h3>
+                    <p class="card-text">Salary<span x-text="Employee.Age" class="alert-info"></span></p>
                </div>
           </template>
      </div>
