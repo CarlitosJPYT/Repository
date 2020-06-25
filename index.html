@@ -9,10 +9,10 @@
      <title>Document</title>
 </head>
 <body>
-     <div x-data="main()" class="container-fluid bg-primary">
-          <ul class="card-body">
-               <template x-for="animal in animals" :key="animal">
-                    <li x-text="animal" class="card-link"></li>
+     <div x-data="main()" class="navbar fixed-top navbar-dark bg-primary">
+          <ul class="card-body nav">
+               <template class="nav-link active" x-for="animal in animals" :key="animal">
+                    <li class="nav-link" x-text="animal" class="card-link"></li>
                </template>
           </ul>
      </div>
