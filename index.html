@@ -19,7 +19,8 @@
           <template x-for="Employee in Employees" class="card-body bg-info">
                <div class="Employee">
                     <h3 x-text="Employee.Name + ' ' + Employee.LastName" class="display-4"></h3>
-                    <p class="card-text">Salary<span x-text="Employee.Age" class="alert-info"></span></p>
+                    <p class="card-text">Age<span x-text="Employee.Age" class="alert-info"></span></p>
+                    <p x-text="Employee.City" class="card-text"></p>
                </div>
           </template>
      </div>
