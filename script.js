@@ -5,11 +5,10 @@ function main() {
                'Cat',
                'Parrot',
                'Worm',
-               'Pard'
+               'Pard',
           ]
      }
 }
-
 function list() {
      return {
           Employees : [
@@ -36,7 +35,12 @@ function list() {
                     LastName : 'Prada',
                     Age : 20,
                     City : 'Medellin-Colombia'
-               },
-          ]
+               }
+          ],
+          start : function() {
+               prompt(this.animals)
+               if (true) {console.log(this.Employees)}
+               setTimeout(() => {alert(name)}, 5000);
+          } 
      }
 }
