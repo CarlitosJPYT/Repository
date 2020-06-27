@@ -20,7 +20,7 @@
           <template x-for="Employee in Employees" class="card-body bg-info">
                <div class="Employee">
                     <h3 x-text="Employee.Name + ' ' + Employee.LastName" class="display-4"></h3>
-                    <p class="card-text">Age<span x-text="Employee.Age"></span></p>
+                    <p class="card-text">Age<span class="alert-link" x-text="Employee.Age"></span></p>
                     <p x-text="Employee.City" class="card-text"></p>
                </div>
           </template>
